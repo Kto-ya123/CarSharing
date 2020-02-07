@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d16ec3-5d27-448b-8088-a05e025942df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Accident.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/BodyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Transmission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MailConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/AccidentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ContractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Accident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Accident.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580763373842</updated>
       <workItem from="1580763381161" duration="9963000" />
-      <workItem from="1581019310353" duration="11331000" />
+      <workItem from="1581019310353" duration="11682000" />
     </task>
     <task id="LOCAL-00001" summary="configure application">
       <created>1580763761956</created>
@@ -246,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581030269172</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="create entities">
+      <created>1581078817444</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581078817444</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +265,8 @@
     <MESSAGE value="create search with parameters in ContractRepository" />
     <MESSAGE value="add enums for class car" />
     <MESSAGE value="ляляля" />
-    <option name="LAST_COMMIT_MESSAGE" value="ляляля" />
+    <MESSAGE value="create entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="create entities" />
   </component>
   <component name="WindowStateProjectService">
     <state x="314" y="71" key="#Assign_Data_Sources" timestamp="1581035560064">
@@ -296,9 +299,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="452" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1440.825@0.23.1440.825" timestamp="1581032721019" />
-    <state x="298" y="23" key="CommitChangelistDialog2" timestamp="1581030268985">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="236" y="23" key="CommitChangelistDialog2" timestamp="1581078817015">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state x="236" y="23" key="CommitChangelistDialog2/0.23.1440.814@0.23.1440.814" timestamp="1581078817015" />
     <state x="298" y="23" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1580770205633" />
     <state x="298" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581030268985" />
     <state x="100" y="123" width="1229" height="566" key="DiffContextDialog" timestamp="1581018897787">
@@ -366,9 +370,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="216" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581029772334" />
-    <state x="314" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581030285121">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="314" y="144" key="Vcs.Push.Dialog.v2" timestamp="1581078824464">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
+    <state x="314" y="144" key="Vcs.Push.Dialog.v2/0.23.1440.814@0.23.1440.814" timestamp="1581078824464" />
     <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1580770218612" />
     <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581030285121" />
     <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1581019320794" />
