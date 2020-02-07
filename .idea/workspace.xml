@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92c19789-d173-485a-9a0c-1c55988883be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/corseproject/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/broadcast.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/car.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
+    <list default="true" id="01d16ec3-5d27-448b-8088-a05e025942df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Accident.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/BodyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Transmission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/corseproject/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,214 +32,57 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_example@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="car" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_example@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="car" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_example@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="car" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_example: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="car: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_example@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="car" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_example: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="employee: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="car: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="car: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="car" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="car: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="contract: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/AccidentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Accident.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/ContractRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addSubdivision.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/BodyType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/car.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/redactEmployee.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FavoritesManager">
+    <favorites_list name="CarSharing" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>@override</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Artur\IdeaProjects\hello</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/CommentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/RatingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/TagRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Technics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/TShirtRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/BacketController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/mypage.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Subdivision.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Subdivision.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/subdivision.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Flat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/SubdivisionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/RedactSubdivisionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/employees.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/EmployeeRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/FlatRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/TechnicsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/addSubdivision.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/addTechnics.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/allsubdivision.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/redact.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/redactEmployee.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/redactTechnics.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/subdivisionPage.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/applyBroadcast.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/broadcast.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/BroadCastController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/RedactTechController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/alltechnics.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/broadcastTechnics.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/BroadcastController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/SubdivisionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Broadcast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/RedactEmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/BroadcastRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/BodyType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Transmission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Contract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/AccidentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/CarRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/ClientRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/repos/ContractRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/domain/Accident.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/car.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/corseproject/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
   <component name="MavenImportPreferences">
@@ -245,1003 +92,301 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hello" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="255" />
-    <option name="width" value="1440" />
-    <option name="height" value="773" />
-  </component>
+  <component name="ProjectId" id="1XJTodg784GvOi6YVQqG4hirHiV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hello" type="58d84e3e:PackageViewProjectNode" />
-              <item name="hello" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="corseproject" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="corseproject" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="corseproject" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="corseproject" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="corseproject" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="repos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hello" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="hello" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/example" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources\templates" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources\style\js" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\uploads" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources\style" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources\style\css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="corseproject.domain" />
-      <recent name="corseproject.repos" />
-      <recent name="corseproject.controller" />
-      <recent name="corseproject.service" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources\templates" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\uploads" />
-      <recent name="C:\Users\Artur\IdeaProjects\hello\src\main\resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="corseproject.Application" />
-      <module name="hello" />
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CarSharing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CarSharing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="hello" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="corseproject.Application" />
+      <module name="CarSharing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Application" />
-      <item itemvalue="Spring Boot.Application" />
-    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:car" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92c19789-d173-485a-9a0c-1c55988883be" name="Default Changelist" comment="" />
-      <created>1554989194317</created>
+      <changelist id="01d16ec3-5d27-448b-8088-a05e025942df" name="Default Changelist" comment="" />
+      <created>1580763373842</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554989194317</updated>
-      <workItem from="1554989197905" duration="11912000" />
-      <workItem from="1555069527658" duration="4396000" />
-      <workItem from="1555106204129" duration="2096000" />
-      <workItem from="1555164116858" duration="9383000" />
-      <workItem from="1555240780229" duration="602000" />
-      <workItem from="1555251751399" duration="10401000" />
-      <workItem from="1555262490693" duration="1733000" />
-      <workItem from="1555273338745" duration="13289000" />
-      <workItem from="1555528305076" duration="6511000" />
-      <workItem from="1555534903051" duration="17620000" />
-      <workItem from="1555595345555" duration="611000" />
-      <workItem from="1555600017763" duration="12369000" />
-      <workItem from="1555612499544" duration="134000" />
-      <workItem from="1555619595112" duration="2388000" />
-      <workItem from="1555622027511" duration="1080000" />
-      <workItem from="1555692725380" duration="1106000" />
-      <workItem from="1555693874652" duration="6583000" />
-      <workItem from="1555758590952" duration="12973000" />
-      <workItem from="1555788718625" duration="484000" />
-      <workItem from="1555809891674" duration="1592000" />
-      <workItem from="1555937629365" duration="4170000" />
-      <workItem from="1556117597390" duration="15467000" />
-      <workItem from="1556137134796" duration="5741000" />
-      <workItem from="1556174420597" duration="2340000" />
-      <workItem from="1556185307074" duration="8896000" />
-      <workItem from="1556229930208" duration="2223000" />
-      <workItem from="1556283119004" duration="630000" />
-      <workItem from="1556288363483" duration="16460000" />
-      <workItem from="1556309089574" duration="18126000" />
-      <workItem from="1556345336528" duration="864000" />
-      <workItem from="1556347076540" duration="241000" />
-      <workItem from="1556348638134" duration="498000" />
-      <workItem from="1556362410225" duration="7013000" />
-      <workItem from="1556372054771" duration="16690000" />
-      <workItem from="1556394133396" duration="4374000" />
-      <workItem from="1556458689386" duration="21414000" />
-      <workItem from="1556487407002" duration="25067000" />
-      <workItem from="1556541382001" duration="5692000" />
-      <workItem from="1556549235537" duration="3508000" />
-      <workItem from="1556576790116" duration="940000" />
-      <workItem from="1556735162965" duration="606000" />
-      <workItem from="1556885807179" duration="1247000" />
-      <workItem from="1556987125650" duration="640000" />
-      <workItem from="1557083637046" duration="385000" />
-      <workItem from="1557484236842" duration="93000" />
-      <workItem from="1557500486872" duration="598000" />
-      <workItem from="1557523431674" duration="46000" />
-      <workItem from="1557562575120" duration="396000" />
-      <workItem from="1576057702931" duration="721000" />
-      <workItem from="1576065649591" duration="1752000" />
-      <workItem from="1576150998822" duration="1468000" />
-      <workItem from="1576152803725" duration="1769000" />
-      <workItem from="1576154619458" duration="1768000" />
-      <workItem from="1576156441662" duration="1768000" />
-      <workItem from="1576158259447" duration="1770000" />
-      <workItem from="1576160067738" duration="319000" />
-      <workItem from="1576168924453" duration="1776000" />
-      <workItem from="1576170771828" duration="1765000" />
-      <workItem from="1576172623071" duration="6188000" />
-      <workItem from="1576189543936" duration="23614000" />
-      <workItem from="1576422656209" duration="1781000" />
-      <workItem from="1576603412681" duration="615000" />
-      <workItem from="1580762054398" duration="7007000" />
-      <workItem from="1581009299526" duration="175000" />
-      <workItem from="1581011817673" duration="2419000" />
-      <workItem from="1581032338587" duration="2820000" />
-      <workItem from="1581071540234" duration="3003000" />
+      <updated>1580763373842</updated>
+      <workItem from="1580763381161" duration="9963000" />
+      <workItem from="1581019310353" duration="11331000" />
     </task>
-    <task id="LOCAL-00001" summary="registration and authorisation">
-      <created>1555027747404</created>
+    <task id="LOCAL-00001" summary="configure application">
+      <created>1580763761956</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1555027747404</updated>
+      <updated>1580763761956</updated>
     </task>
-    <task id="LOCAL-00002" summary="new freemarker">
-      <created>1555169621308</created>
+    <task id="LOCAL-00002" summary="add entity">
+      <created>1580766561552</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1555169621308</updated>
+      <updated>1580766561552</updated>
     </task>
-    <task id="LOCAL-00003" summary="new freemarker">
-      <created>1555169788987</created>
+    <task id="LOCAL-00003" summary="add AccidentRepository">
+      <created>1580768146870</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1555169788987</updated>
+      <updated>1580768146870</updated>
     </task>
-    <task id="LOCAL-00004" summary="new freemarker">
-      <created>1555279867118</created>
+    <task id="LOCAL-00004" summary="add CarRepository">
+      <created>1580768161019</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1555279867118</updated>
+      <updated>1580768161019</updated>
     </task>
-    <task id="LOCAL-00005" summary="registr and auth">
-      <created>1555280678908</created>
+    <task id="LOCAL-00005" summary="add ClientRepository">
+      <created>1580768175076</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1555280678908</updated>
+      <updated>1580768175076</updated>
     </task>
-    <task id="LOCAL-00006" summary="registr and auth">
-      <created>1555282518541</created>
+    <task id="LOCAL-00006" summary="add ContractRepository">
+      <created>1580768194655</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1555282518541</updated>
+      <updated>1580768194655</updated>
     </task>
-    <task id="LOCAL-00007" summary="admin pannel">
-      <created>1555285943020</created>
+    <task id="LOCAL-00007" summary="create search with parameters in AccidentRepository">
+      <created>1580770190574</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1555285943020</updated>
+      <updated>1580770190574</updated>
     </task>
-    <task id="LOCAL-00008" summary="admin pannel">
-      <created>1555529619321</created>
+    <task id="LOCAL-00008" summary="create search with parameters in ContractRepository">
+      <created>1580770205810</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1555529619321</updated>
+      <updated>1580770205810</updated>
     </task>
-    <task id="LOCAL-00009" summary="admin pannel">
-      <created>1555532018696</created>
+    <task id="LOCAL-00009" summary="add enums for class car">
+      <created>1581016559622</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1555532018696</updated>
+      <updated>1581016559622</updated>
     </task>
-    <task id="LOCAL-00010" summary="admin pannel">
-      <created>1555532811233</created>
+    <task id="LOCAL-00010" summary="ляляля">
+      <created>1581030269172</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1555532811233</updated>
+      <updated>1581030269172</updated>
     </task>
-    <task id="LOCAL-00011" summary="admin pannel">
-      <created>1555533948414</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1555533948414</updated>
-    </task>
-    <task id="LOCAL-00012" summary="start develop of personal page and comments">
-      <created>1555555005910</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1555555005910</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Personal page and comments">
-      <created>1555612613052</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1555612613052</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Personal page and comments">
-      <created>1555701357278</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1555701357278</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Personal page and comments">
-      <created>1555764612311</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1555764612311</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Personal page and comments">
-      <created>1555788912565</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1555788912565</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add Shirts to cloudinary sucsess">
-      <created>1556132775541</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1556132775541</updated>
-    </task>
-    <task id="LOCAL-00018" summary="all works">
-      <created>1556144128985</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1556144128985</updated>
-    </task>
-    <task id="LOCAL-00019" summary="all works">
-      <created>1556218900255</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1556218900255</updated>
-    </task>
-    <task id="LOCAL-00020" summary="registration with mail">
-      <created>1556294078691</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1556294078691</updated>
-    </task>
-    <task id="LOCAL-00021" summary="all constructor TShirts">
-      <created>1556309428106</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1556309428106</updated>
-    </task>
-    <task id="LOCAL-00022" summary="all constructor TShirts">
-      <created>1556327597962</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1556327597962</updated>
-    </task>
-    <task id="LOCAL-00023" summary="all constructor TShirtshbkhjk">
-      <created>1556369341329</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1556369341329</updated>
-    </task>
-    <task id="LOCAL-00024" summary="tags + start hibernate search">
-      <created>1556387568309</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1556387568309</updated>
-    </task>
-    <task id="LOCAL-00025" summary="tags + start hibernate search">
-      <created>1556389035820</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1556389035820</updated>
-    </task>
-    <task id="LOCAL-00026" summary="tags + start hibernate search">
-      <created>1556474150766</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1556474150767</updated>
-    </task>
-    <task id="LOCAL-00027" summary="tags + start hibernate search">
-      <created>1556480164003</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1556480164003</updated>
-    </task>
-    <task id="LOCAL-00028" summary="tags + start hibernate search">
-      <created>1556523584935</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1556523584936</updated>
-    </task>
-    <task id="LOCAL-00029" summary="tags + start hibernate search">
-      <created>1556532178189</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1556532178189</updated>
-    </task>
-    <task id="LOCAL-00030" summary="pbz">
-      <created>1580762347196</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1580762347196</updated>
-    </task>
-    <task id="LOCAL-00031" summary="pbz">
-      <created>1581072424615</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1581072424616</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="11" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344126000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23221476" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3290735" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32719547" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49328858" weight="0.33854908" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49880382" weight="0.39917696" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4957369" weight="0.41076487" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5042631" side_tool="true" weight="0.41207814" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4952153" weight="0.30878186" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49641147" visible="true" weight="0.32577905" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.05033557" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.31946307" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3290735" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32784638" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49328858" visible="true" weight="0.3371105" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49880382" weight="0.39917696" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4957369" weight="0.41207814" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32868525" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32868525" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5042631" side_tool="true" weight="0.41207814" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4952153" weight="0.30878186" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32868525" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49641147" weight="0.32577905" />
-      <window_info anchor="bottom" id="Database Console" order="16" visible="true" weight="0.32921812" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.24362417" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.31966147" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="registration and authorisation" />
-    <MESSAGE value="new freemarker" />
-    <MESSAGE value="registr and auth" />
-    <MESSAGE value="admin pannel" />
-    <MESSAGE value="start develop of personal page and comments" />
-    <MESSAGE value="Personal page and comments" />
-    <MESSAGE value="add Shirts to cloudinary sucsess" />
-    <MESSAGE value="all works" />
-    <MESSAGE value="registration with mail" />
-    <MESSAGE value="all constructor TShirts" />
-    <MESSAGE value="all constructor TShirtshbkhjk" />
-    <MESSAGE value="tags + start hibernate search" />
-    <MESSAGE value="pbz" />
-    <option name="LAST_COMMIT_MESSAGE" value="pbz" />
+    <MESSAGE value="configure application" />
+    <MESSAGE value="add entity" />
+    <MESSAGE value="add AccidentRepository" />
+    <MESSAGE value="add CarRepository" />
+    <MESSAGE value="add ClientRepository" />
+    <MESSAGE value="add ContractRepository" />
+    <MESSAGE value="create search with parameters in AccidentRepository" />
+    <MESSAGE value="create search with parameters in ContractRepository" />
+    <MESSAGE value="add enums for class car" />
+    <MESSAGE value="ляляля" />
+    <option name="LAST_COMMIT_MESSAGE" value="ляляля" />
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="tag.tagName.hash" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/allsubdivision.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/redact.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/applyBroadcast.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/subdivisionPage.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/redactTechnics.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="50" selection-start-line="50" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/alltechnics.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/broadcastTechnics.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/bae44fc2-9c4a-4944-bc9d-456acbd57601.SCHEMA:db_example">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>bae44fc2-9c4a-4944-bc9d-456acbd57601.SCHEMA:db_example</OriginalElement>
-          <nodes>
-            <node x="-114.4653918664153" y="245.46215997845405">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.employee</node>
-            <node x="332.9275518448693" y="8.615674656611905">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.broadcast</node>
-            <node x="535.2421222730945" y="571.3907891193106">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.hibernate_sequence</node>
-            <node x="108.31133854026393" y="392.9232426609211">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.subdivision</node>
-            <node x="335.77349851871804" y="247.92378130891458">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.flat</node>
-            <node x="-105.8497172098034" y="11.07729598707245">bae44fc2-9c4a-4944-bc9d-456acbd57601.TABLE:db_example.technics</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8124726477024069" x="45.0" y="291.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/RedactSubdivisionController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/RedactTechController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/SubdivisionController.java" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/technics" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/subdivision" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/hibernate_sequence" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/employee" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/RedactEmployeeController.java" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/broadcast" />
-    <entry file="das://bae44fc2-9c4a-4944-bc9d-456acbd57601/schema/db_example/table/flat" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/FlatRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/SubdivisionRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/TechnicsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/BroadcastController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Technics.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="158" selection-start-line="1" selection-end-line="1" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Employee.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/EmployeeRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/BroadcastRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Broadcast.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Flat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Position.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Subdivision.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Transmission.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/CarRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/ClientRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addTechnics.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addSubdivision.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/redactEmployee.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/car.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/BodyType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Accident.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/domain/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/ContractRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/corseproject/repos/AccidentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring|hello</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="314" y="71" key="#Assign_Data_Sources" timestamp="1581035560064">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="314" y="71" key="#Assign_Data_Sources/0.23.1440.822@0.23.1440.822" timestamp="1581035560064" />
+    <state x="452" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580764464688">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="452" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.823@0.23.1440.823" timestamp="1580764464688" />
+    <state x="314" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581028665840">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="314" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1580768643233" />
+    <state x="314" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1581028665840" />
+    <state x="527" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1581035493579">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="527" y="129" key="#com.intellij.ide.util.MemberChooser/0.23.1440.822@0.23.1440.822" timestamp="1581035493579" />
+    <state x="527" y="129" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1581032414070" />
+    <state x="563" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581015450741">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="563" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.825@0.23.1440.825" timestamp="1581015450741" />
+    <state x="466" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581032861673">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="466" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.825@0.23.1440.825" timestamp="1581032861673" />
+    <state x="452" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581032721019">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="452" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1440.825@0.23.1440.825" timestamp="1581032721019" />
+    <state x="298" y="23" key="CommitChangelistDialog2" timestamp="1581030268985">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="298" y="23" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1580770205633" />
+    <state x="298" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581030268985" />
+    <state x="100" y="123" width="1229" height="566" key="DiffContextDialog" timestamp="1581018897787">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="100" y="123" width="1229" height="566" key="DiffContextDialog/0.23.1440.825@0.23.1440.825" timestamp="1581018897787" />
+    <state x="0" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1581029631749">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="0" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1440.825@0.23.1440.825" timestamp="1581029631749" />
+    <state x="579" y="306" key="Github.ShareDialog" timestamp="1580763799413">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="579" y="306" key="Github.ShareDialog/0.23.1440.825@0.23.1440.825" timestamp="1580763799413" />
+    <state width="1387" height="20" key="GridCell.Tab.0.bottom" timestamp="1581036112724">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1581036112724" />
+    <state width="1387" height="278" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1581033677979" />
+    <state width="1387" height="20" key="GridCell.Tab.0.center" timestamp="1581036112724">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1581036112724" />
+    <state width="1387" height="278" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1581033677977" />
+    <state width="1387" height="20" key="GridCell.Tab.0.left" timestamp="1581036112723">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1581036112723" />
+    <state width="1387" height="278" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1581033677975" />
+    <state width="1387" height="20" key="GridCell.Tab.0.right" timestamp="1581036112724">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1581036112724" />
+    <state width="1387" height="278" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1581033677979" />
+    <state width="1387" height="20" key="GridCell.Tab.1.bottom" timestamp="1581036112726">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1581036112726" />
+    <state width="1387" height="278" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1581033677981" />
+    <state width="1387" height="20" key="GridCell.Tab.1.center" timestamp="1581036112725">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1581036112725" />
+    <state width="1387" height="278" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1581033677980" />
+    <state width="1387" height="20" key="GridCell.Tab.1.left" timestamp="1581036112725">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1581036112725" />
+    <state width="1387" height="278" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1581033677980" />
+    <state width="1387" height="20" key="GridCell.Tab.1.right" timestamp="1581036112725">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1387" height="20" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1581036112725" />
+    <state width="1387" height="278" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1581033677980" />
+    <state x="252" y="68" key="Maven.ArtifactSearchDialog" timestamp="1581037094658">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="252" y="68" key="Maven.ArtifactSearchDialog/0.23.1440.822@0.23.1440.822" timestamp="1581037094658" />
+    <state x="252" y="68" key="Maven.ArtifactSearchDialog/0.23.1440.825@0.23.1440.825" timestamp="1580764176940" />
+    <state x="516" y="135" key="RollbackChangesDialog" timestamp="1581015429782">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="516" y="135" key="RollbackChangesDialog/0.23.1440.825@0.23.1440.825" timestamp="1581015429782" />
+    <state x="216" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1581029772334">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="216" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581029772334" />
+    <state x="314" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581030285121">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1580770218612" />
+    <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581030285121" />
+    <state x="314" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1581019320794" />
+    <state x="786" y="101" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1581035835138">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="786" y="101" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.822@0.23.1440.822" timestamp="1581035835138" />
+    <state x="498" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581018926907">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="498" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1581018926907" />
+    <state x="400" y="204" key="git4idea.merge.GitPullDialog" timestamp="1581018778044">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="400" y="204" key="git4idea.merge.GitPullDialog/0.23.1440.825@0.23.1440.825" timestamp="1581018778044" />
+    <state x="379" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1580764361125">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="379" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1580764361125" />
   </component>
 </project>
