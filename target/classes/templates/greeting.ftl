@@ -1,15 +1,18 @@
 <#import "parts/style.ftl" as s>
 <div>
-    <a href="/subdivision">Подразделения</a>
+    <H2>Car-Sharing</H2>
 </div>
 <div>
-    <a href="/employee">Работники</a>
+    <a href="/car">Автомобиль</a>
 </div>
 <div>
-    <a href="/tech">Техника</a>
+    <a href="/client">Клиент</a>
 </div>
 <div>
-    <a href="/broadcast">Перемещения</a>
+    <a href="/contract">Контракт</a>
+</div>
+<div>
+    <a href="/accident">ДТП</a>
 </div>
 
 

@@ -1,4 +1,4 @@
-<#import "../style.ftl" as s>
+<#import "parts/style.ftl" as s>
 <div>
     <H2>Car-Sharing</H2>
 </div>

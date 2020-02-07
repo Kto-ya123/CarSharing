@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hello" />
+        <module name="CarSharing" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding Cp866" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CarSharing" options="-parameters" />
       <module name="hello" options="-parameters" />
     </option>
   </component>
