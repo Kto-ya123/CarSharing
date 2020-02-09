@@ -118,17 +118,22 @@
             <th scope="col">Номер</th>
             <th scope="col">Статус</th>
             <th scope="col">Цена</th>
+            <th scope="col">Действие</th>
         </tr>
         </thead>
         <tbody>
-        <tr class ="text-left">
-            <td>Lexus</td>
-            <td>White</td>
-            <td>седан</td>
-            <td>auto</td>
-            <td>1234</td>
-            <td>free</td>
-            <td>1000$</td>
+        <tr th:each="car: ${cars}">
+            <td th:text="${car.model}">Модель</td>
+            <td th:text="${car.color}">Цвет</td>
+            <td th:text="${car.bodyType}">Тип</td>
+            <td th:text="${car.transmission}">Трансмиссия</td>
+            <td th:text="${car.vehicleNumber}">Номер</td>
+            <td th:text="${car.isFree}">Статус</td>
+            <td th:text="${car.price}">Цена</td>
+            <td>
+        <a class="nav-link" href="#">Изменить</a>
+        <a class="nav-link" href="#">Удалить</a>
+        </td>
         </tr>
         </tbody>
     </table>
