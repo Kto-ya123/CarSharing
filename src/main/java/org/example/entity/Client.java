@@ -3,6 +3,7 @@ package org.example.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Data
@@ -34,6 +35,6 @@ public class Client {
     private String telephoneNumber;
 
     @Column
-    private  String address;
+    private String address;
 
 }

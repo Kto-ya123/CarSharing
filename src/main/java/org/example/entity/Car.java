@@ -3,7 +3,6 @@ package org.example.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @Data
@@ -17,7 +16,7 @@ public class Car {
     private Integer id;
 
     @Column
-    private  String model;
+    private String model;
 
     @Column
     private String color;
