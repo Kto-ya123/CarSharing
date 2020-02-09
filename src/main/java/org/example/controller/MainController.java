@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MainController {
-
-    @GetMapping("/")
+    @GetMapping(value = "/")
     public String mainPage(Model model){
-        return "greeting";
+        return "start";
     }
 }
