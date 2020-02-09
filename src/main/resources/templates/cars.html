@@ -22,6 +22,7 @@
             <li class="nav-item">
                 <a class="nav-link" data-toggle="modal" data-target="#myModal">Добавить</a>
                 <!-- The Modal -->
+                <form method="post" th:object="${cars}">
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -51,7 +52,17 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Тип</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <form>
+                                            <select name="cars" class="custom-select mb-1">
+                                                <option selected></option>
+                                                <option value="sedan">Седан</option>
+                                                <option value="miniven">Минивен</option>
+                                                <option value="coup">Купе</option>
+                                                <option value="x">Хэтчбек</option>
+                                                <option value="l">Лифтбек</option>
+                                                <option value="u">Универсал</option>
+                                            </select>
+                                        </form>
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
@@ -82,12 +93,13 @@
 
                             <!-- Modal footer -->
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Сохранить</button>
+                                <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
+                </form>
             </li>
             </li>
             </li>
