@@ -34,52 +34,53 @@
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <form>
+                                <form  action="/clients/add" method="post">
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Фамилия</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="surname" class="form-control">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Имя</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="name" class="form-control">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Отчество</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="patronymic" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Паспортные данные</span>
                                     </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="passport" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Стаж</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="experience" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Телефон</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="phone" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Адрес</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="address" class="form-control">
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
                                     </div>
                                 </form>
                             </div>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -118,6 +119,21 @@
                 <a class="nav-link" href="#">Удалить</a>
             </td>
         </tr>
+        <#list clients as client>
+        <tr class ="text-left">
+            <td>${client.surname}</td>
+            <td>${client.name}</td>
+            <td>${client.patronymic}</td>
+            <td>${client.passport}</td>
+            <td>${client.experience}</td>
+            <td>${client.phoneNumber}</td>
+            <td>${client.address}</td>
+            <td>
+                <a class="nav-link" href="#">Изменить</a>
+                <a class="nav-link" href="#">Удалить</a>
+            </td>
+        </tr>
+        </#list>
         </tbody>
     </table>
 </div>
