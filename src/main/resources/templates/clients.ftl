@@ -28,7 +28,7 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Добавление.</h4>
+                                <h4 class="modal-title">Добавление</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
 
@@ -79,9 +79,6 @@
                                     </div>
                                 </form>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -116,7 +113,7 @@
             <td>Держинского 95</td>
             <td>
                 <a class="nav-link" href="#">Изменить</a>
-                <a class="nav-link" href="#">Удалить</a>
+                <a class="nav-link" type="submit">Удалить</a>
             </td>
         </tr>
         <#list clients as client>
@@ -129,8 +126,69 @@
             <td>${client.phoneNumber}</td>
             <td>${client.address}</td>
             <td>
-                <a class="nav-link" href="#">Изменить</a>
-                <a class="nav-link" href="#">Удалить</a>
+                <a class="nav-link" data-toggle="modal" data-target="#reduct${client.id}">Изменить</a>
+                <!-- The Modal -->
+                <div class="modal fade" id="reduct${client.id}">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Изменение</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form  action="/clients/reduct/${client.id}" method="post">
+                                    <div class="input-group mb-3 input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Фамилия</span>
+                                        </div>
+                                        <input type="text" name="surname" value="${client.surname}" class="form-control">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Имя</span>
+                                        </div>
+                                        <input type="text" name="name" value="${client.name}" class="form-control">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Отчество</span>
+                                        </div>
+                                        <input type="text" name="patronymic" value="${client.patronymic}" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3 input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Паспортные данные</span>
+                                        </div>
+                                        <input type="text" name="passport" value="${client.passport}" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3 input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Стаж</span>
+                                        </div>
+                                        <input type="text" name="experience" value="${client.experience}" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3 input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Телефон</span>
+                                        </div>
+                                        <input type="text" name="phone" value="${client.phoneNumber}" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3 input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Адрес</span>
+                                        </div>
+                                        <input type="text" name="address" value="${client.address}" class="form-control">
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-outline-success p-2" type="submit">Изменить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-link" href="/clients/delete/${client.id}">Удалить</a>
             </td>
         </tr>
         </#list>

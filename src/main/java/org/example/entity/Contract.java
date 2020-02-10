@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Contract {
-    private static final String FORMAT = "YYYY/MM/DD hh:mm";
+    private static final String FORMAT = "YYYY/MM/DD";
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat(FORMAT);
 
     @Id
@@ -23,11 +23,11 @@ public class Contract {
     private Integer id;
 
     @Column
-    @DateTimeFormat(pattern = "yyyy/MM/dd hh:mm")
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date dateOfStart;
 
     @Column
-    @DateTimeFormat(pattern = "yyyy/MM/dd hh:mm")
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date dateOfEnd;
 
     @Column

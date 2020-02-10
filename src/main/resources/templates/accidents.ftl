@@ -34,32 +34,37 @@
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <form>
+                                <form action="/accidents/add" method="post">
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Номер договора</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <select name="contract" class="custom-select mb-1">
+                                            <#list contracts as contract>
+                                                <option selected value="${contract.id}">${contract.id}-${contract.car.model}-${contract.car.vehicleNumber}</option>
+                                            </#list>
+                                        </select>
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Дата происшедствия</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="date" name="dateOfAccident" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Стоимость ущерба</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="number" name="costOfDamage" class="form-control">
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
                                     </div>
                                 </form>
                             </div>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -82,15 +87,65 @@
         </tr>
         </thead>
         <tbody>
-        <tr class ="text-left">
-            <td>1</td>
-            <td>3.10.2020</td>
-            <td>1123</td>
-            <td>
-                <a class="nav-link" href="#">Изменить</a>
-                <a class="nav-link" href="#">Удалить</a>
-            </td>
-        </tr>
+        <#list accidents as accident>
+            <tr class ="text-left">
+                <td>${accident.contract.id}</td>
+                <td>${accident.dateOfAccident}</td>
+                <td>${accident.costOfDamage}</td>
+                <td>
+                    <a class="nav-link" data-toggle="modal" data-target="#reduct${accident.id}">Изменить</a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="reduct${accident.id}">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Редактирование</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/accidents/reduct/${accident.id}" method="post">
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Номер договора</span>
+                                            </div>
+                                            <select name="contract" class="custom-select mb-1">
+                                                <#list contracts as contract>
+                                                    <option selected value="${contract.id}">${contract.id}-${contract.car.model}-${contract.car.vehicleNumber}</option>
+                                                </#list>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Дата происшедствия</span>
+                                            </div>
+                                            <input type="date" name="dateOfAccident" class="form-control">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Стоимость ущерба</span>
+                                            </div>
+                                            <input type="number" name="costOfDamage" value="${accident.costOfDamage}" class="form-control">
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="/accidents/delete/${accident.id}">Удалить</a>
+                </td>
+            </tr>
+        </#list>
         </tbody>
     </table>
 </div>

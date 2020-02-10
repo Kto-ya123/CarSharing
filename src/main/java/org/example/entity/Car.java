@@ -22,12 +22,10 @@ public class Car {
     private String color;
 
     @Column
-    @Enumerated(EnumType.STRING)
-    private BodyType bodyType;
+    private String bodyType;
 
     @Column
-    @Enumerated(EnumType.STRING)
-    private Transmission transmission;
+    private String transmission;
 
     @Column
     private String vehicleNumber;

@@ -34,44 +34,53 @@
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <form>
+                                <form action="/contracts/add" method="post">
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Номер клиента</span>
+                                            <span class="input-group-text">Клиент</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <select name="client" class="custom-select mb-1">
+                                            <#list clients as client>
+                                                <option selected value="${client.id}">${client.surname} ${client.name}</option>
+                                            </#list>
+                                        </select>
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Номер автомобиля</span>
+                                            <span class="input-group-text">Автомобиль</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <select name="car" class="custom-select mb-1">
+                                            <#list cars as car>
+                                                <option selected value="${car.id}">${car.model} ${car.vehicleNumber}</option>
+                                            </#list>
+                                        </select>
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Дата начала аренды</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="date" name="dateOfStart" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Дата конца аренды</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="date" name="dateOfEnd" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Стоимость</span>
                                         </div>
-                                        <input type="text" class="form-control">
+                                        <input type="number" name="totalCost" class="form-control">
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
                                     </div>
                                 </form>
                             </div>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -87,7 +96,7 @@
     <table class="table table-hover table-light">
         <thead class="thead-dark">
         <tr>
-            <th scope="col">Номер клиента</th>
+            <th scope="col">Клиент</th>
             <th scope="col">Номер автомобиля</th>
             <th scope="col">Дата начала аренды</th>
             <th scope="col">Дата конца аренды</th>
@@ -96,17 +105,83 @@
         </tr>
         </thead>
         <tbody>
-        <tr class ="text-left">
-            <td>1</td>
-            <td>1</td>
-            <td>1.10.2020</td>
-            <td>3.10.2020</td>
-            <td>1123</td>
-            <td>
-                <a class="nav-link" href="#">Изменить</a>
-                <a class="nav-link" href="#">Удалить</a>
-            </td>
-        </tr>
+        <#list contracts as contract>
+            <tr class ="text-left">
+                <td>${contract.client.surname}</td>
+                <td>${contract.car.vehicleNumber}</td>
+                <td>${contract.dateOfStart}</td>
+                <td>${contract.dateOfEnd}</td>
+                <td>${contract.totalCost}</td>
+                <td>
+                    <a class="nav-link" data-toggle="modal" data-target="#reduct${contract.id}">Изменить</a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="reduct${contract.id}">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Редактирование</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/contracts/reduct/${contract.id}" method="post">
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Клиент</span>
+                                            </div>
+                                            <select name="client" class="custom-select mb-1">
+                                                <#list clients as client>
+                                                    <option selected value="${client.id}">${client.surname} ${client.name}</option>
+                                                </#list>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Автомобиль</span>
+                                            </div>
+                                            <select name="car" class="custom-select mb-1">
+                                                <#list cars as car>
+                                                    <option selected value="${car.id}">${car.model} ${car.vehicleNumber}</option>
+                                                </#list>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Дата начала аренды</span>
+                                            </div>
+                                            <input type="date" name="dateOfStart" value="${contract.dateOfStart}" class="form-control">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Дата конца аренды</span>
+                                            </div>
+                                            <input type="date" name="dateOfEnd" value="${contract.dateOfEnd}" class="form-control">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Стоимость</span>
+                                            </div>
+                                            <input type="number" name="totalCost" value="${contract.totalCost}" class="form-control">
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="/contracts/delete/${contract.id}">Удалить</a>
+                </td>
+            </tr>
+        </#list>
         </tbody>
     </table>
 </div>
