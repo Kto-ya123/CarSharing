@@ -109,8 +109,8 @@
             <tr class ="text-left">
                 <td>${contract.client.surname}</td>
                 <td>${contract.car.vehicleNumber}</td>
-                <td>${contract.dateOfStart}</td>
-                <td>${contract.dateOfEnd}</td>
+                <td>${contract.dateOfStart?date}</td>
+                <td>${contract.dateOfEnd?date}</td>
                 <td>${contract.totalCost}</td>
                 <td>
                     <a class="nav-link" data-toggle="modal" data-target="#reduct${contract.id}">Изменить</a>

@@ -90,7 +90,7 @@
         <#list accidents as accident>
             <tr class ="text-left">
                 <td>${accident.contract.id}</td>
-                <td>${accident.dateOfAccident}</td>
+                <td>${accident.dateOfAccident?date}</td>
                 <td>${accident.costOfDamage}</td>
                 <td>
                     <a class="nav-link" data-toggle="modal" data-target="#reduct${accident.id}">Изменить</a>
