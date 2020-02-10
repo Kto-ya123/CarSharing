@@ -17,10 +17,10 @@
         <ul class="navbar-nav">
             <li class="nav-item">
             <li class="nav-item">
-                <a class="nav-link" href="/">На главную</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#myModal">Добавить</a>
+                <a class="nav-link" data-toggle="modal" data-target="#myModal">Add</a>
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog">
@@ -28,7 +28,7 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Добавление</h4>
+                                <h4 class="modal-title">Adding</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
 
@@ -37,7 +37,7 @@
                                 <form action="/contracts/add" method="post">
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Клиент</span>
+                                            <span class="input-group-text">Client</span>
                                         </div>
                                         <select name="client" class="custom-select mb-1">
                                             <#list clients as client>
@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Автомобиль</span>
+                                            <span class="input-group-text">Car</span>
                                         </div>
                                         <select name="car" class="custom-select mb-1">
                                             <#list cars as car>
@@ -57,19 +57,19 @@
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Дата начала аренды</span>
+                                            <span class="input-group-text">Rental start date</span>
                                         </div>
                                         <input type="date" name="dateOfStart" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Дата конца аренды</span>
+                                            <span class="input-group-text">Rental end date</span>
                                         </div>
                                         <input type="date" name="dateOfEnd" class="form-control">
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                        <button class="btn btn-outline-success p-2" type="submit">Save</button>
                                     </div>
                                 </form>
                             </div>
@@ -90,12 +90,12 @@
     <table class="table table-hover table-light">
         <thead class="thead-dark">
         <tr>
-            <th scope="col">Клиент</th>
-            <th scope="col">Номер автомобиля</th>
-            <th scope="col">Дата начала аренды</th>
-            <th scope="col">Дата конца аренды</th>
-            <th scope="col">Стоимость</th>
-            <th scope="col">Действие</th>
+            <th scope="col">Client</th>
+            <th scope="col">Vehicle number</th>
+            <th scope="col">Rental start date</th>
+            <th scope="col">Rental end date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -107,7 +107,7 @@
                 <td>${contract.dateOfEnd?date}</td>
                 <td>${contract.totalCost}</td>
                 <td>
-                    <a class="nav-link" data-toggle="modal" data-target="#reduct${contract.id}">Изменить</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#reduct${contract.id}">Update</a>
                     <!-- The Modal -->
                     <div class="modal fade" id="reduct${contract.id}">
                         <div class="modal-dialog">
@@ -115,7 +115,7 @@
 
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Редактирование</h4>
+                                    <h4 class="modal-title">Updating</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
 
@@ -124,7 +124,7 @@
                                     <form action="/contracts/reduct/${contract.id}" method="post">
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Клиент</span>
+                                                <span class="input-group-text">Client</span>
                                             </div>
                                             <select name="client" class="custom-select mb-1">
                                                 <#list clients as client>
@@ -134,7 +134,7 @@
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Автомобиль</span>
+                                                <span class="input-group-text">Car</span>
                                             </div>
                                             <select name="car" class="custom-select mb-1">
                                                 <#list cars as car>
@@ -144,25 +144,25 @@
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Дата начала аренды</span>
+                                                <span class="input-group-text">Rental start date</span>
                                             </div>
                                             <input type="date" name="dateOfStart" value="${contract.dateOfStart}" class="form-control">
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Дата конца аренды</span>
+                                                <span class="input-group-text">Rental end date</span>
                                             </div>
                                             <input type="date" name="dateOfEnd" value="${contract.dateOfEnd}" class="form-control">
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Стоимость</span>
+                                                <span class="input-group-text">Price</span>
                                             </div>
                                             <input type="number" name="totalCost" value="${contract.totalCost}" class="form-control">
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
-                                            <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                            <button class="btn btn-outline-success p-2" type="submit">Update</button>
                                         </div>
                                     </form>
                                 </div>
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="nav-link" href="/contracts/delete/${contract.id}">Удалить</a>
+                    <a class="nav-link" href="/contracts/delete/${contract.id}">Delete</a>
                 </td>
             </tr>
         </#list>

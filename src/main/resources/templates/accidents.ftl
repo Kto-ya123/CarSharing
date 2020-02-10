@@ -17,10 +17,10 @@
         <ul class="navbar-nav">
             <li class="nav-item">
             <li class="nav-item">
-                <a class="nav-link" href="/">На главную</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#myModal">Добавить</a>
+                <a class="nav-link" data-toggle="modal" data-target="#myModal">Add</a>
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog">
@@ -28,7 +28,7 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Добавление</h4>
+                                <h4 class="modal-title">Adding</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
 
@@ -37,7 +37,7 @@
                                 <form action="/accidents/add" method="post">
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Номер договора</span>
+                                            <span class="input-group-text">Contract number</span>
                                         </div>
                                         <select name="contract" class="custom-select mb-1">
                                             <#list contracts as contract>
@@ -47,19 +47,19 @@
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Дата происшедствия</span>
+                                            <span class="input-group-text">Date of accident</span>
                                         </div>
                                         <input type="date" name="dateOfAccident" class="form-control">
                                     </div>
                                     <div class="input-group mb-3 input-group-sm">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Стоимость ущерба</span>
+                                            <span class="input-group-text">Cost of damage</span>
                                         </div>
                                         <input type="number" name="costOfDamage" class="form-control">
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                        <button class="btn btn-outline-success p-2" type="submit">Save</button>
                                     </div>
                                 </form>
                             </div>
@@ -80,10 +80,10 @@
     <table class="table table-hover table-light">
         <thead class="thead-dark">
         <tr>
-            <th scope="col">Номер контракта</th>
-            <th scope="col">Дата события</th>
-            <th scope="col">Стоимость ущерба</th>
-            <th scope="col">Действие</th>
+            <th scope="col">Contact number</th>
+            <th scope="col">Date of accident</th>
+            <th scope="col">Cost of damage</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -93,7 +93,7 @@
                 <td>${accident.dateOfAccident?date}</td>
                 <td>${accident.costOfDamage}</td>
                 <td>
-                    <a class="nav-link" data-toggle="modal" data-target="#reduct${accident.id}">Изменить</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#reduct${accident.id}">Update</a>
                     <!-- The Modal -->
                     <div class="modal fade" id="reduct${accident.id}">
                         <div class="modal-dialog">
@@ -101,7 +101,7 @@
 
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Редактирование</h4>
+                                    <h4 class="modal-title">Updating</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
 
@@ -110,7 +110,7 @@
                                     <form action="/accidents/reduct/${accident.id}" method="post">
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Номер договора</span>
+                                                <span class="input-group-text">Contract number</span>
                                             </div>
                                             <select name="contract" class="custom-select mb-1">
                                                 <#list contracts as contract>
@@ -120,19 +120,19 @@
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Дата происшедствия</span>
+                                                <span class="input-group-text">Date of accident</span>
                                             </div>
                                             <input type="date" name="dateOfAccident" class="form-control">
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text">Стоимость ущерба</span>
+                                                <span class="input-group-text">Cost of damage</span>
                                             </div>
                                             <input type="number" name="costOfDamage" value="${accident.costOfDamage}" class="form-control">
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
-                                            <button class="btn btn-outline-success p-2" type="submit">Сохранить</button>
+                                            <button class="btn btn-outline-success p-2" type="submit">Update</button>
                                         </div>
                                     </form>
                                 </div>
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="nav-link" href="/accidents/delete/${accident.id}">Удалить</a>
+                    <a class="nav-link" href="/accidents/delete/${accident.id}">Delete</a>
                 </td>
             </tr>
         </#list>

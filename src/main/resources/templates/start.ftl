@@ -13,13 +13,13 @@
 </head>
 <body>
 <div class="jumbotron text-center">
-<h1 style="color:Gray">Каршеринг</h1>
+<h1 style="color:Gray">CarSharing</h1>
 <div class="container-fluid">
     <div class="d-flex justify-content-center mt-5">
-        <a href="/cars" class="btn btn-outline-secondary m-2">Автомобили</a>
-        <a href="/clients" class="btn-outline-secondary btn m-2">Клиенты</a>
-        <a href="/contracts" class="btn-outline-secondary btn m-2">Договора</a>
-        <a href="/accidents" class="btn-outline-secondary btn m-2">ДТП</a>
+        <a href="/cars" class="btn btn-outline-secondary m-2">Cars</a>
+        <a href="/clients" class="btn-outline-secondary btn m-2">Clients</a>
+        <a href="/contracts" class="btn-outline-secondary btn m-2">Contracts</a>
+        <a href="/accidents" class="btn-outline-secondary btn m-2">Accidents</a>
     </div>
 </div>
 </div>
