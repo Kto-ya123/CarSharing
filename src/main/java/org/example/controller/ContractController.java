@@ -40,13 +40,14 @@ public class ContractController {
     public String addContract(@RequestParam Car car,
                             @RequestParam Client client,
                             @RequestParam Date dateOfStart,
-                            @RequestParam Date dateOfEnd,
-                            @RequestParam Double totalCost){
+                            @RequestParam Date dateOfEnd){
         Contract contract = new Contract();
         contract.setCar(car);
         contract.setClient(client);
         contract.setDateOfStart(dateOfStart);
         contract.setDateOfEnd(dateOfEnd);
+        Long timeInDay = ((dateOfEnd.getTime() - dateOfStart.getTime())/1000/3600/24) + 1;
+        Double totalCost = car.getPrice() * timeInDay;
         contract.setTotalCost(totalCost);
         contractRepository.save(contract);
         return "redirect:/contracts";
@@ -66,8 +67,7 @@ public class ContractController {
                                  @RequestParam Car car,
                                  @RequestParam Client client,
                                  @RequestParam Date dateOfStart,
-                                 @RequestParam Date dateOfEnd,
-                                 @RequestParam Double totalCost){
+                                 @RequestParam Date dateOfEnd){
         Optional<Contract> contractOptional = contractRepository.findById(id);
         if(contractOptional.isPresent()) {
             Contract contract = contractOptional.get();
@@ -77,6 +77,8 @@ public class ContractController {
             contract.setDateOfStart(dateOfStart);
             dateOfEnd.setDate(dateOfEnd.getDate() + 1);
             contract.setDateOfEnd(dateOfEnd);
+            Long timeInDay = (dateOfEnd.getTime() - dateOfStart.getTime())/1000/3600/24;
+            Double totalCost = car.getPrice() * timeInDay;
             contract.setTotalCost(totalCost);
             contractRepository.save(contract);
         }

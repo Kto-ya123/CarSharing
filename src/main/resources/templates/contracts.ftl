@@ -51,7 +51,7 @@
                                         </div>
                                         <select name="car" class="custom-select mb-1">
                                             <#list cars as car>
-                                                <option selected value="${car.id}">${car.model} ${car.vehicleNumber}</option>
+                                                <option selected value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}BYN</option>
                                             </#list>
                                         </select>
                                     </div>
@@ -66,12 +66,6 @@
                                             <span class="input-group-text">Дата конца аренды</span>
                                         </div>
                                         <input type="date" name="dateOfEnd" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Стоимость</span>
-                                        </div>
-                                        <input type="number" name="totalCost" class="form-control">
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
@@ -144,7 +138,7 @@
                                             </div>
                                             <select name="car" class="custom-select mb-1">
                                                 <#list cars as car>
-                                                    <option selected value="${car.id}">${car.model} ${car.vehicleNumber}</option>
+                                                    <option selected value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}BYN</option>
                                                 </#list>
                                             </select>
                                         </div>
