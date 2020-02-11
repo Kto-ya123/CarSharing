@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+>
 <head>
     <title>lab 2</title>
 
@@ -13,26 +13,26 @@
 </head>
 <body>
 <div class="jumbotron text-center">
-<h1 style="color:Gray">CarSharing</h1>
-<div class="container-fluid">
-    <div class="d-flex justify-content-center mt-5">
-        <a href="/cars" class="btn btn-outline-secondary m-2">Cars</a>
-        <a href="/clients" class="btn-outline-secondary btn m-2">Clients</a>
-        <a href="/contracts" class="btn-outline-secondary btn m-2">Contracts</a>
-        <a href="/accidents" class="btn-outline-secondary btn m-2">Accidents</a>
+    <h1 style="color:Gray">CarSharing</h1>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center mt-5">
+            <a href="/cars" class="btn btn-outline-secondary m-2">Cars</a>
+            <a href="/clients" class="btn-outline-secondary btn m-2">Clients</a>
+            <a href="/contracts" class="btn-outline-secondary btn m-2">Contracts</a>
+            <a href="/accidents" class="btn-outline-secondary btn m-2">Accidents</a>
+        </div>
     </div>
 </div>
-</div>
 </body>
-    <style>
-        /* Make the image fully responsive */
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-            margin-top: -140px;
-            z-index: -1;
-        }
-    </style>
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        margin-top: -140px;
+        z-index: -1;
+    }
+</style>
 </head>
 <body>
 
@@ -47,10 +47,12 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://www.mercedes-benz.ru/passengercars/content-pool/marketing-pool/stage-homepage/homepage-2019/_jcr_content/par/stagepushableelement_1136026584.MQ6.12.20191206142312.jpeg" alt="Lexus" width="1100" height="500">
+            <img src="https://www.mercedes-benz.ru/passengercars/content-pool/marketing-pool/stage-homepage/homepage-2019/_jcr_content/par/stagepushableelement_1136026584.MQ6.12.20191206142312.jpeg"
+                 alt="Lexus" width="1100" height="500">
         </div>
         <div class="carousel-item">
-            <img src="https://files.porsche.com/filestore/image/multimedia/none/970-g2-4hy-modelimage-sideshot/model/75bba5f4-6044-11e9-80c4-005056bbdc38/porsche-model.png" alt="Porche" width="1100" height="500">
+            <img src="https://files.porsche.com/filestore/image/multimedia/none/970-g2-4hy-modelimage-sideshot/model/75bba5f4-6044-11e9-80c4-005056bbdc38/porsche-model.png"
+                 alt="Porche" width="1100" height="500">
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+>
 <head>
 
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
@@ -22,88 +22,88 @@
             <li class="nav-item">
                 <a class="nav-link" data-toggle="modal" data-target="#myModal">Add</a>
                 <!-- The Modal -->
-                <form action="/cars/add" method="post" >
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
+                <form action="/cars/add" method="post">
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
 
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Adding</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Adding</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
 
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <form>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Model</span>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Model</span>
+                                            </div>
+                                            <input type="text" name="model" class="form-control">
                                         </div>
-                                        <input type="text" name="model" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Color</span>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Color</span>
+                                            </div>
+                                            <input type="text" name="color" class="form-control">
                                         </div>
-                                        <input type="text" name="color" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Body type</span>
-                                        </div>
-                                        <select name="bodyType" class="custom-select mb-1">
-                                            <option selected value="sedan">Sedan</option>
-                                            <option value="miniven">Minivan</option>
-                                            <option value="coup">Coup</option>
-                                            <option value="hatchback">Hatchback</option>
-                                            <option value="liftback">Liftback</option>
-                                            <option value="universalis">Universal</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Transmission</span>
-                                        </div>
-                                        <select name="transmission" class="custom-select mb-1">
-                                            <option selected value="Auto">Automatic transmission</option>
-                                            <option value="Manual">Manual transmission</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Vehicle number</span>
-                                        </div>
-                                        <input type="text" name="vehicleNumber" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Status</span>
-                                        </div>
-                                        <form>
-                                            <select name="isFree" class="custom-select mb-1">
-                                                <option selected value="false">Booked</option>
-                                                <option value="true">Free</option>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Body type</span>
+                                            </div>
+                                            <select name="bodyType" class="custom-select mb-1">
+                                                <option selected value="sedan">Sedan</option>
+                                                <option value="miniven">Minivan</option>
+                                                <option value="coup">Coup</option>
+                                                <option value="hatchback">Hatchback</option>
+                                                <option value="liftback">Liftback</option>
+                                                <option value="universalis">Universal</option>
                                             </select>
-                                        </form>
-                                    </div>
-                                    <div class="input-group mb-3 input-group-sm">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Price per day rent</span>
                                         </div>
-                                        <input type="number" name="price" class="form-control">
-                                    </div>
-                                </form>
-                            </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Transmission</span>
+                                            </div>
+                                            <select name="transmission" class="custom-select mb-1">
+                                                <option selected value="Auto">Automatic transmission</option>
+                                                <option value="Manual">Manual transmission</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Vehicle number</span>
+                                            </div>
+                                            <input type="text" name="vehicleNumber" class="form-control">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Status</span>
+                                            </div>
+                                            <form>
+                                                <select name="isFree" class="custom-select mb-1">
+                                                    <option selected value="false">Booked</option>
+                                                    <option value="true">Free</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Price per day rent</span>
+                                            </div>
+                                            <input type="number" name="price" class="form-control">
+                                        </div>
+                                    </form>
+                                </div>
 
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button class="btn btn-outline-success p-2" type="submit">Save</button>
-                            </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-outline-success p-2" type="submit">Save</button>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
                 </form>
             </li>
             </li>
@@ -128,7 +128,7 @@
         </thead>
         <tbody>
         <#list cars as car>
-            <tr class ="text-left">
+            <tr class="text-left">
                 <td>${car.model}</td>
                 <td>${car.color}</td>
                 <td>${car.bodyType}</td>
@@ -139,7 +139,7 @@
                 <td>
                     <a class="nav-link" data-toggle="modal" data-target="#reduct${car.id}">Update</a>
                     <!-- The Modal -->
-                    <form action="/cars/reduct/${car.id}" method="post" >
+                    <form action="/cars/reduct/${car.id}" method="post">
                         <div class="modal fade" id="reduct${car.id}">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -157,13 +157,15 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Model</span>
                                                 </div>
-                                                <input type="text" name="model" value="${car.model}" class="form-control">
+                                                <input type="text" name="model" value="${car.model}"
+                                                       class="form-control">
                                             </div>
                                             <div class="input-group mb-3 input-group-sm">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Color</span>
                                                 </div>
-                                                <input type="text" name="color" value="${car.color}" class="form-control">
+                                                <input type="text" name="color" value="${car.color}"
+                                                       class="form-control">
                                             </div>
                                             <div class="input-group mb-3 input-group-sm">
                                                 <div class="input-group-prepend">
@@ -191,7 +193,8 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Vehicle number</span>
                                                 </div>
-                                                <input type="text" name="vehicleNumber" value="${car.vehicleNumber}" class="form-control">
+                                                <input type="text" name="vehicleNumber" value="${car.vehicleNumber}"
+                                                       class="form-control">
                                             </div>
                                             <div class="input-group mb-3 input-group-sm">
                                                 <div class="input-group-prepend">
@@ -208,7 +211,8 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Price per day rent</span>
                                                 </div>
-                                                <input type="number" name="price" value="${car.price}" class="form-control">
+                                                <input type="number" name="price" value="${car.price}"
+                                                       class="form-control">
                                             </div>
                                         </form>
                                     </div>
@@ -222,8 +226,8 @@
                             </div>
                         </div>
                     </form>
-            <a class="nav-link" href="/cars/delete/${car.id}">Delete</a>
-            </td>
+                    <a class="nav-link" href="/cars/delete/${car.id}">Delete</a>
+                </td>
             </tr>
         </#list>
         </tbody>

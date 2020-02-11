@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+>
 <head>
 
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
@@ -41,7 +41,8 @@
                                         </div>
                                         <select name="client" class="custom-select mb-1">
                                             <#list clients as client>
-                                                <option selected value="${client.id}">${client.surname} ${client.name}</option>
+                                                <option selected
+                                                        value="${client.id}">${client.surname} ${client.name}</option>
                                             </#list>
                                         </select>
                                     </div>
@@ -51,7 +52,10 @@
                                         </div>
                                         <select name="car" class="custom-select mb-1">
                                             <#list cars as car>
-                                                <option selected value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}BYN</option>
+                                                <option selected
+                                                        value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}
+                                                    BYN
+                                                </option>
                                             </#list>
                                         </select>
                                     </div>
@@ -73,7 +77,6 @@
                                     </div>
                                 </form>
                             </div>
-
 
 
                         </div>
@@ -100,7 +103,7 @@
         </thead>
         <tbody>
         <#list contracts as contract>
-            <tr class ="text-left">
+            <tr class="text-left">
                 <td>${contract.client.surname}</td>
                 <td>${contract.car.vehicleNumber}</td>
                 <td>${contract.dateOfStart?date}</td>
@@ -128,7 +131,8 @@
                                             </div>
                                             <select name="client" class="custom-select mb-1">
                                                 <#list clients as client>
-                                                    <option selected value="${client.id}">${client.surname} ${client.name}</option>
+                                                    <option selected
+                                                            value="${client.id}">${client.surname} ${client.name}</option>
                                                 </#list>
                                             </select>
                                         </div>
@@ -138,7 +142,10 @@
                                             </div>
                                             <select name="car" class="custom-select mb-1">
                                                 <#list cars as car>
-                                                    <option selected value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}BYN</option>
+                                                    <option selected
+                                                            value="${car.id}">${car.model} ${car.vehicleNumber} ${car.price}
+                                                        BYN
+                                                    </option>
                                                 </#list>
                                             </select>
                                         </div>
@@ -146,19 +153,22 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">Rental start date</span>
                                             </div>
-                                            <input type="date" name="dateOfStart" value="${contract.dateOfStart}" class="form-control">
+                                            <input type="date" name="dateOfStart" value="${contract.dateOfStart}"
+                                                   class="form-control">
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">Rental end date</span>
                                             </div>
-                                            <input type="date" name="dateOfEnd" value="${contract.dateOfEnd}" class="form-control">
+                                            <input type="date" name="dateOfEnd" value="${contract.dateOfEnd}"
+                                                   class="form-control">
                                         </div>
                                         <div class="input-group mb-3 input-group-sm">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">Price</span>
                                             </div>
-                                            <input type="number" name="totalCost" value="${contract.totalCost}" class="form-control">
+                                            <input type="number" name="totalCost" value="${contract.totalCost}"
+                                                   class="form-control">
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
@@ -166,7 +176,6 @@
                                         </div>
                                     </form>
                                 </div>
-
 
 
                             </div>

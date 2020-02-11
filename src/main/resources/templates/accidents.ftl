@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+>
 <head>
 
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
@@ -41,7 +41,8 @@
                                         </div>
                                         <select name="contract" class="custom-select mb-1">
                                             <#list contracts as contract>
-                                                <option selected value="${contract.id}">${contract.id}-${contract.car.model}-${contract.car.vehicleNumber}</option>
+                                                <option selected value="${contract.id}">${contract.id}
+                                                    -${contract.car.model}-${contract.car.vehicleNumber}</option>
                                             </#list>
                                         </select>
                                     </div>
@@ -63,7 +64,6 @@
                                     </div>
                                 </form>
                             </div>
-
 
 
                         </div>
@@ -88,7 +88,7 @@
         </thead>
         <tbody>
         <#list accidents as accident>
-            <tr class ="text-left">
+            <tr class="text-left">
                 <td>${accident.contract.id}</td>
                 <td>${accident.dateOfAccident?date}</td>
                 <td>${accident.costOfDamage}</td>
@@ -114,7 +114,8 @@
                                             </div>
                                             <select name="contract" class="custom-select mb-1">
                                                 <#list contracts as contract>
-                                                    <option selected value="${contract.id}">${contract.id}-${contract.car.model}-${contract.car.vehicleNumber}</option>
+                                                    <option selected value="${contract.id}">${contract.id}
+                                                        -${contract.car.model}-${contract.car.vehicleNumber}</option>
                                                 </#list>
                                             </select>
                                         </div>
@@ -128,7 +129,8 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">Cost of damage</span>
                                             </div>
-                                            <input type="number" name="costOfDamage" value="${accident.costOfDamage}" class="form-control">
+                                            <input type="number" name="costOfDamage" value="${accident.costOfDamage}"
+                                                   class="form-control">
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
@@ -136,7 +138,6 @@
                                         </div>
                                     </form>
                                 </div>
-
 
 
                             </div>
