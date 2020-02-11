@@ -1,36 +1,21 @@
 package org.example.controller;
 
-import org.example.entity.Client;
-import org.example.entity.Contract;
-import org.example.repository.AccidentRepository;
-import org.example.repository.ClientRepository;
-import org.example.repository.ContractRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.example.service.ClientService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
-import java.util.Optional;
+
 
 @Controller
 @RequestMapping("/clients")
+@RequiredArgsConstructor
 public class ClientController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ClientController.class);
-    @Autowired
-    ClientRepository clientRepository;
-
-    @Autowired
-    ContractRepository contractRepository;
-
-    @Autowired
-    AccidentRepository accidentRepository;
+    private final ClientService clientService;
 
     @GetMapping()
     public String clientPage(Model model) {
-        List<Client> clients = clientRepository.findAll();
-        model.addAttribute("clients", clients);
+        model.addAttribute("clients", clientService.findAll());
         return "clients";
     }
 
@@ -41,38 +26,19 @@ public class ClientController {
                             @RequestParam String experience,
                             @RequestParam String address,
                             @RequestParam String phone,
-                            @RequestParam String passport,
-                            Model model) {
-        Client client = new Client();
-        client.setName(name);
-        client.setSurname(surname);
-        client.setPatronymic(patronymic);
-        client.setAddress(address);
-        client.setExperience(Integer.parseInt(experience));
-        client.setPassport(passport);
-        client.setPhoneNumber(phone);
-        clientRepository.save(client);
-        LOGGER.info("Add new client with id " + client.getId());
+                            @RequestParam String passport) {
+        clientService.save(name, surname, patronymic, experience, address, phone, passport);
         return "redirect:/clients";
     }
 
     @GetMapping("/delete/{delClient}")
-    public String deleteClient(@PathVariable Integer delClient) {
-        Optional<Client> client = clientRepository.findById(delClient);
-        if (client.isPresent()) {
-            List<Contract> contracts = contractRepository.findContractByClient(client.get());
-            for (Contract contract : contracts) {
-                accidentRepository.deleteAll(accidentRepository.findAccidentByContract(contract));
-            }
-            contractRepository.deleteAll(contracts);
-            clientRepository.delete(client.get());
-            LOGGER.info("Delete client with id " + delClient);
-        }
+    public String deleteClient(@PathVariable Long delClient) {
+        clientService.remove(delClient);
         return "redirect:/clients";
     }
 
     @PostMapping("/reduct/{id}")
-    public String reductClient(@PathVariable Integer id,
+    public String reductClient(@PathVariable Long id,
                                @RequestParam String name,
                                @RequestParam String surname,
                                @RequestParam String patronymic,
@@ -80,19 +46,7 @@ public class ClientController {
                                @RequestParam String address,
                                @RequestParam String phone,
                                @RequestParam String passport) {
-        Optional<Client> clientOptional = clientRepository.findById(id);
-        if (clientOptional.isPresent()) {
-            Client client = clientOptional.get();
-            client.setSurname(surname);
-            client.setName(name);
-            client.setPatronymic(patronymic);
-            client.setAddress(address);
-            client.setExperience(Integer.parseInt(experience));
-            client.setPassport(passport);
-            client.setPhoneNumber(phone);
-            clientRepository.save(client);
-            LOGGER.info("Update client with id " + id);
-        }
+        clientService.update(id, name, surname, patronymic, experience, address, phone, passport);
         return "redirect:/clients";
     }
 
