@@ -20,7 +20,7 @@ public class Contract {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column
     @DateTimeFormat(pattern = "yyyy/MM/dd")
