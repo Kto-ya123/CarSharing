@@ -51,17 +51,10 @@ public class CarController {
         return "redirect:/cars";
     }
 
-    @GetMapping("/get")
-    public @ResponseBody Car getCarInJSON(){
-        Car car = new Car();
-        car.setModel("Lexus");
-        car.setColor("White");
-        car.setBodyType("Minivan");
-        car.setTransmission("Manual");
-        car.setVehicleNumber("0708 EK-2");
-        car.setIsFree(Boolean.parseBoolean("false"));
-        car.setPrice(800.0);
-        return car;
+    @GetMapping("/get/{id}")
+    @ResponseBody
+    public Car getCarInJSON(@PathVariable Long id){
+        return carService.findById(id);
     }
 
 }
