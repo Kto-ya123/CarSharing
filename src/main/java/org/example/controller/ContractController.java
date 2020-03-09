@@ -12,11 +12,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
+import java.util.List;
 
 
-@Controller
+@RestController
 @RequestMapping("/contracts")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class ContractController {
     private final ContractService contractService;
     private final CarService carService;
@@ -54,6 +56,46 @@ public class ContractController {
                                  @RequestParam Date dateOfEnd) {
         contractService.update(id, car, client, dateOfStart, dateOfEnd);
         return "redirect:/contracts";
+    }
+
+    @GetMapping("/{id}")
+    @ResponseBody
+    public Contract getContract(@PathVariable Long id){
+        return contractService.findById(id);
+    }
+
+    @GetMapping()
+    @ResponseBody
+    public List<Contract> getContracts(){
+        return contractService.findAll();
+    }
+
+    @PostMapping()
+    @ResponseBody
+    public Contract newContract(@RequestBody Contract contract)
+    {
+        return contractService.save(
+                contract.getCar(),
+                contract.getClient(),
+                contract.getDateOfStart(),
+                contract.getDateOfEnd());
+    }
+
+    @PutMapping()
+    @ResponseBody
+    public Contract updateContract(@RequestBody Contract contract)
+    {
+        return contractService.update(contract.getId(),
+                contract.getCar(),
+                contract.getClient(),
+                contract.getDateOfStart(),
+                contract.getDateOfEnd());
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseBody
+    public void deleteContract(@PathVariable long id){
+        contractService.remove(id);
     }
 
 }

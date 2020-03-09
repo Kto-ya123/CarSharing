@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
     <script src="/webjars/momentjs/2.24.0/moment.js"></script>
     <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
