@@ -28,7 +28,7 @@ public class ClientController {
     public String addClient(@RequestParam String name,
                             @RequestParam String surname,
                             @RequestParam String patronymic,
-                            @RequestParam String experience,
+                            @RequestParam Integer experience,
                             @RequestParam String address,
                             @RequestParam String phone,
                             @RequestParam String passport) {
@@ -47,7 +47,7 @@ public class ClientController {
                                @RequestParam String name,
                                @RequestParam String surname,
                                @RequestParam String patronymic,
-                               @RequestParam String experience,
+                               @RequestParam Integer experience,
                                @RequestParam String address,
                                @RequestParam String phone,
                                @RequestParam String passport) {
@@ -76,10 +76,9 @@ public class ClientController {
                 client.getSurname(),
                 client.getPatronymic(),
                 client.getExperience(),
-                client.getPassport(),
-                client.getExperience(),
+                client.getAddress(),
                 client.getPhoneNumber(),
-                client.getAddress());
+                client.getPassport());
     }
 
     @PutMapping()
@@ -91,10 +90,9 @@ public class ClientController {
                 client.getSurname(),
                 client.getPatronymic(),
                 client.getExperience(),
-                client.getPassport(),
-                client.getExperience(),
+                client.getAddress(),
                 client.getPhoneNumber(),
-                client.getAddress());
+                client.getPassport());
     }
 
     @DeleteMapping("/{id}")

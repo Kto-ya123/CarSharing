@@ -14,7 +14,7 @@ public interface ClientService {
     Client save(String name,
                 String surname,
                 String patronymic,
-                String experience,
+                Integer experience,
                 String address,
                 String phone,
                 String passport);
@@ -23,7 +23,7 @@ public interface ClientService {
                   String name,
                   String surname,
                   String patronymic,
-                  String experience,
+                  Integer experience,
                   String address,
                   String phone,
                   String passport);
