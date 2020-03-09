@@ -24,7 +24,7 @@ public class ContractController {
     private final CarService carService;
     private final ClientService clientService;
 
-    @GetMapping()
+    /*@GetMapping()
     public String contractPage(Model model) {
         model.addAttribute("clients", clientService.findAll());
         model.addAttribute("cars", carService.findAll());
@@ -56,7 +56,7 @@ public class ContractController {
                                  @RequestParam Date dateOfEnd) {
         contractService.update(id, car, client, dateOfStart, dateOfEnd);
         return "redirect:/contracts";
-    }
+    }*/
 
     @GetMapping("/{id}")
     @ResponseBody

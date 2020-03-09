@@ -23,7 +23,7 @@ public class AccidentController {
     private final AccidentService accidentService;
     private final ContractService contractService;
 
-    @GetMapping()
+    /*@GetMapping()
     public String accidentPage(Model model) {
         model.addAttribute("contracts", contractService.findAll());
         model.addAttribute("accidents", accidentService.findAll());
@@ -54,7 +54,7 @@ public class AccidentController {
                                  @RequestParam Double costOfDamage) {
         accidentService.update(id, contract, dateOfAccident, costOfDamage);
         return "redirect:/accidents";
-    }
+    }*/
 
     @GetMapping("/{id}")
     @ResponseBody

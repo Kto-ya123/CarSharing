@@ -39,7 +39,7 @@ public class ClientServiceImpl implements ClientService {
 
     @Transactional
     @Override
-    public Client save(String name, String surname, String patronymic, String experience,
+    public Client save(String name, String surname, String patronymic, Integer experience,
                        String address, String phone, String passport) {
         Optional<Client> exitClient = clientRepository.findClientByPassport(passport);
         if (exitClient.isPresent()) {
@@ -50,7 +50,7 @@ public class ClientServiceImpl implements ClientService {
         client.setSurname(surname);
         client.setPatronymic(patronymic);
         client.setAddress(address);
-        client.setExperience(Integer.parseInt(experience));
+        client.setExperience(experience);
         client.setPassport(passport);
         client.setPhoneNumber(phone);
         log.info("Successfully adding new client");
@@ -60,14 +60,14 @@ public class ClientServiceImpl implements ClientService {
     @Transactional
     @Override
     public Client update(Long id, String name, String surname, String patronymic,
-                         String experience, String address, String phone, String passport) {
+                         Integer experience, String address, String phone, String passport) {
         return clientRepository.findById(id)
                 .map(client -> {
                     client.setSurname(surname);
                     client.setName(name);
                     client.setPatronymic(patronymic);
                     client.setAddress(address);
-                    client.setExperience(Integer.parseInt(experience));
+                    client.setExperience(experience);
                     client.setPassport(passport);
                     client.setPhoneNumber(phone);
                     clientRepository.save(client);

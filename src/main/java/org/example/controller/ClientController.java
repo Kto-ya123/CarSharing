@@ -18,7 +18,7 @@ import java.util.List;
 public class ClientController {
     private final ClientService clientService;
 
-    @GetMapping()
+    /*@GetMapping()
     public String clientPage(Model model) {
         model.addAttribute("clients", clientService.findAll());
         return "clients";
@@ -53,7 +53,7 @@ public class ClientController {
                                @RequestParam String passport) {
         clientService.update(id, name, surname, patronymic, experience, address, phone, passport);
         return "redirect:/clients";
-    }
+    }*/
 
     @GetMapping("/{id}")
     @ResponseBody
