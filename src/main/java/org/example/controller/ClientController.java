@@ -18,43 +18,6 @@ import java.util.List;
 public class ClientController {
     private final ClientService clientService;
 
-    @GetMapping()
-    public String clientPage(Model model) {
-        model.addAttribute("clients", clientService.findAll());
-        return "clients";
-    }
-
-    @PostMapping("/add")
-    public String addClient(@RequestParam String name,
-                            @RequestParam String surname,
-                            @RequestParam String patronymic,
-                            @RequestParam Integer experience,
-                            @RequestParam String address,
-                            @RequestParam String phone,
-                            @RequestParam String passport) {
-        clientService.save(name, surname, patronymic, experience, address, phone, passport);
-        return "redirect:/clients";
-    }
-
-    @GetMapping("/delete/{delClient}")
-    public String deleteClient(@PathVariable Long delClient) {
-        clientService.remove(delClient);
-        return "redirect:/clients";
-    }
-
-    @PostMapping("/reduct/{id}")
-    public String reductClient(@PathVariable Long id,
-                               @RequestParam String name,
-                               @RequestParam String surname,
-                               @RequestParam String patronymic,
-                               @RequestParam Integer experience,
-                               @RequestParam String address,
-                               @RequestParam String phone,
-                               @RequestParam String passport) {
-        clientService.update(id, name, surname, patronymic, experience, address, phone, passport);
-        return "redirect:/clients";
-    }
-
     @GetMapping("/{id}")
     @ResponseBody
     public Client getClient(@PathVariable Long id){

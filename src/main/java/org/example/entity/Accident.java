@@ -29,7 +29,7 @@ public class Accident {
     @Column
     private Double costOfDamage;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {
+    @ManyToOne(cascade = {
             CascadeType.DETACH,
             CascadeType.REFRESH})
     private Contract contract;

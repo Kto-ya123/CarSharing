@@ -6,12 +6,13 @@ import org.example.entity.Car;
 import org.example.entity.Client;
 import org.example.entity.Contract;
 import org.example.repository.ContractRepository;
+import org.example.service.CarService;
 import org.example.service.ContractService;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -19,6 +20,7 @@ import java.util.List;
 @Slf4j
 public class ContractServiceImpl implements ContractService {
     private final ContractRepository contractRepository;
+    private final CarService carService;
 
     @Transactional
     @Override
@@ -39,6 +41,7 @@ public class ContractServiceImpl implements ContractService {
     @Override
     public Contract save(Car car, Client client, Date dateOfStart, Date dateOfEnd) {
         Contract contract = new Contract();
+        car = carService.findById(car.getId());
         contract.setCar(car);
         contract.setClient(client);
         contract.setDateOfStart(dateOfStart);
@@ -53,16 +56,17 @@ public class ContractServiceImpl implements ContractService {
     @Transactional
     @Override
     public Contract update(Long id, Car car, Client client, Date dateOfStart, Date dateOfEnd) {
+        Car finalCar = carService.findById(car.getId());
         return contractRepository.findById(id)
                 .map(contract -> {
-                    contract.setCar(car);
+                    contract.setCar(finalCar);
                     contract.setClient(client);
                     dateOfStart.setDate(dateOfStart.getDate() + 1);
                     contract.setDateOfStart(dateOfStart);
                     dateOfEnd.setDate(dateOfEnd.getDate() + 1);
                     contract.setDateOfEnd(dateOfEnd);
                     Long timeInDay = (dateOfEnd.getTime() - dateOfStart.getTime()) / 1000 / 3600 / 24;
-                    Double totalCost = car.getPrice() * timeInDay;
+                    Double totalCost = finalCar.getPrice() * timeInDay;
                     contract.setTotalCost(totalCost);
                     contractRepository.save(contract);
                     log.info("Update client with id " + id);

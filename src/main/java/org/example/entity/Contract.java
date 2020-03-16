@@ -33,12 +33,12 @@ public class Contract {
     @Column
     private Double totalCost;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {
+    @ManyToOne(cascade = {
             CascadeType.DETACH,
             CascadeType.REFRESH})
     private Client client;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {
+    @ManyToOne(cascade = {
             CascadeType.DETACH,
             CascadeType.REFRESH})
     private Car car;

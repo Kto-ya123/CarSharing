@@ -6,11 +6,12 @@ import org.example.entity.Accident;
 import org.example.entity.Contract;
 import org.example.repository.AccidentRepository;
 import org.example.service.AccidentService;
+import org.example.service.ContractService;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -18,6 +19,7 @@ import java.util.List;
 @Slf4j
 public class AccidentServiceImpl implements AccidentService {
     private final AccidentRepository accidentRepository;
+    private final ContractService contractService;
 
     @Transactional
     @Override
@@ -37,8 +39,9 @@ public class AccidentServiceImpl implements AccidentService {
     @Transactional
     @Override
     public Accident save(Contract contract, Date dateOfAccident, Double costOfDamage) {
+        Contract finalContract = contractService.findById(contract.getId());
         Accident accident = new Accident();
-        accident.setContract(contract);
+        accident.setContract(finalContract);
         dateOfAccident.setDate(dateOfAccident.getDate() + 1);
         accident.setDateOfAccident(dateOfAccident);
         accident.setCostOfDamage(costOfDamage);
@@ -49,9 +52,10 @@ public class AccidentServiceImpl implements AccidentService {
     @Transactional
     @Override
     public Accident update(Long id, Contract contract, Date dateOfAccident, Double costOfDamage) {
+        Contract finalContract = contractService.findById(contract.getId());
         return accidentRepository.findById(id)
                 .map(accident -> {
-                    accident.setContract(contract);
+                    accident.setContract(finalContract);
                     dateOfAccident.setDate(dateOfAccident.getDate() + 1);
                     accident.setDateOfAccident(dateOfAccident);
                     accident.setCostOfDamage(costOfDamage);

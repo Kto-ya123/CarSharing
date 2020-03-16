@@ -4,7 +4,7 @@ import org.example.entity.Car;
 import org.example.entity.Client;
 import org.example.entity.Contract;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 public interface ContractService {
