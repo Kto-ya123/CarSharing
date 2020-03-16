@@ -1,0 +1,22 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+
+version: '3.7'
+
+# Define services
+services:
+# Database Service (Mysql)
+ db:
+  image: mysql:5.5
+  ports:
+   - "3306:3306"
+  restart: always
+  environment:
+   MYSQL_DATABASE: car
+   MYSQL_USER: root
+   MYSQL_PASSWORD: 123
+   MYSQL_ROOT_PASSWORD: 123
+  volumes:
+   - db-data:/var/lib/mysql
+# Volumes
+volumes:
+  db-data:
