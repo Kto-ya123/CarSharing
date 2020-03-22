@@ -21,7 +21,6 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 public class AccidentController {
     private final AccidentService accidentService;
-    private final ContractService contractService;
 
     @GetMapping("/{id}")
     @ResponseBody
