@@ -5,9 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController {
-     @GetMapping(value = "/")
-     public String mainPage(Model model) {
-       return "start";
+public class LoginController {
+    @GetMapping(value = "/login")
+    public String mainPage(Model model) {
+        return "login";
     }
 }
