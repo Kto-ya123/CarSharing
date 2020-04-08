@@ -20,6 +20,7 @@
             <a href="/clients" class="btn-outline-secondary btn m-2">Clients</a>
             <a href="/contracts" class="btn-outline-secondary btn m-2">Contracts</a>
             <a href="/accidents" class="btn-outline-secondary btn m-2">Accidents</a>
+            <a class="btn-outline-secondary btn m-2" href="#" ng-click="logout()">Logout</a>
         </div>
     </div>
 </div>
