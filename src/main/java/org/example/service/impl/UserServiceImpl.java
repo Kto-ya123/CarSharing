@@ -1,12 +1,13 @@
 package org.example.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.example.entity.User;
+import org.example.entity.UserInfo;
 import org.example.repository.UserRepository;
 import org.example.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
 import java.util.Optional;
 
 @Service
@@ -16,18 +17,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public User saveUser(String login, String password, String name, String surname) {
-        Optional<User> maybeUser = userRepository.findByLogin(login);
+    public UserInfo saveUser(String googleId, String login, String name, String surname) {
+        Optional<UserInfo> maybeUser = userRepository.findByLogin(login);
         if (maybeUser.isPresent()) {
-            return maybeUser.get();
+            UserInfo userInfo = maybeUser.get();
+            userInfo.setLastVisit(Instant.now());
+            return userInfo;
         } else {
-            User user = new User();
-            user.setLogin(login);
-            user.setPassword(password);
-            user.setName(name);
-            user.setSurname(surname);
-            userRepository.save(user);
-            return user;
+            UserInfo userInfo = UserInfo.builder()
+                    .login(login)
+                    .externalUserId(googleId)
+                    .name(name)
+                    .surname(surname)
+                    .lastVisit(Instant.now())
+                    .build();
+            userRepository.saveAndFlush(userInfo);
+            return userInfo;
         }
     }
 }

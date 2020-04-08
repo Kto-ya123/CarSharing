@@ -1,7 +1,7 @@
 package org.example.service;
 
-import org.example.entity.User;
+import org.example.entity.UserInfo;
 
 public interface UserService {
-    User saveUser(String login, String password, String name, String surname);
+    UserInfo saveUser(String googleId, String login, String name, String surname);
 }
