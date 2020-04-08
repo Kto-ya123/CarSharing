@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApiServiceConfiguration {
 
-    private ApiProviderConfig vk;
-    private ApiProviderConfig mail;
+    private ApiProviderConfig facebook;
     private ApiProviderConfig github;
+    private ApiProviderConfig google;
 }
