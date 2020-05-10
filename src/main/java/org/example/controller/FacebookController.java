@@ -81,7 +81,7 @@ public class FacebookController {
                 .claim("user_id", userInfo.getExternalUserId())
                 .signWith(SignatureAlgorithm.HS512,
                         "0ddf5597e02d981f8803c4cc11f015a4e52679d706edb29b595d9e466def5bcf95273a3053ab5d97ee893c23e4023b912daefaade316406a33b7685d4d223dfa").compact();
-        return new RedirectView(String.format("http://localhost:4200/", jwt), true);
+        return new RedirectView(String.format("http://localhost:4200", jwt), true);
     }
 }
 
