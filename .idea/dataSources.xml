@@ -15,12 +15,6 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="message@localhost" uuid="0eb1be14-68e3-4d3e-af05-11b1c863aa5f">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/message?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="car@localhost" uuid="16011a1a-2ef9-4f2d-858f-55a32c8f5796">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
