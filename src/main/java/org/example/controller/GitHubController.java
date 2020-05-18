@@ -9,6 +9,7 @@ import org.example.entity.UserInfo;
 import org.example.service.UserService;
 import org.json.JSONObject;
 import org.springframework.http.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +26,7 @@ import java.util.Objects;
 @RestController
 @RequestMapping("/github/controller")
 @RequiredArgsConstructor
+@CrossOrigin(origins = {"http://localhost:4200", "http://ec2-18-188-63-75.us-east-2.compute.amazonaws.com"})
 public class GitHubController {
 
     private final ApiServiceConfiguration configuration;
